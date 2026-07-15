@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+}
+
+.sidebar {
+    background-color: white;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.content-title {
+    background-color: rgb(240, 240, 240);
+}
+
+.book-section {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side-title {
+    font-weight: 900;
+    font-size: 2.3rem;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.subtitle{
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+
+.list-items {
+    list-style: none;
+    line-height: 50px;
+}
+
+.list-items li{
+    padding-left: 30px;
+    transition: background-color 0.3s ease; 
+    transition: font-weight 0.1s ease;
+}
+
+
+.list-items li:hover,
+li.active{
+    background-color: rgb(211, 188, 211);
+    color: rgb(67, 0, 129);
+    font-weight: 600;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.icon{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.icon1 {
+    height: 20px;
+}
+
+.profile div {
+    font-weight: 500;
+    color: rgb(89, 88, 88);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: clamp(300px, 80vw, 800px);;
+    min-height: 35px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: 1px solid rgb(184, 161, 213);
+    padding-left: 20px;
+    
+}
+
+.search input:focus{
+    outline: none;
+    border: 2px solid rgb(57, 6, 105);
+}
+
+.content-title {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.content-title div {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.content-title button {
+    padding: 9px 60px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: ease-in 0.3s;
+    transition: border ease-in 0.3s;
+}
+
+.content-title button:hover{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid blueviolet;
+}
+
+.content-title button:active{
+    color: blueviolet;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+
+
