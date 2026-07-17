@@ -35,6 +35,8 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
     grid-template-rows: repeat(4, 150px);
     grid-auto-rows: 150px;
+    gap: 30px;
+    
 
 }
 
@@ -166,7 +168,12 @@ li.active{
 
 .book-cover{
     height: 127px;
-    width: 100px;
+    width: 86px;
+    background-image: url(./assets/generic\ book\ cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
     border-radius: 10px;
 }
 
