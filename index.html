@@ -40,5 +40,20 @@
             </div>
         </div>
     </div>
+    <form action="#" class="addBook-form">
+            <div class="form-nav">
+                <h2>Add Book to Library</h2>
+                <button type="button" class="form-button">X</button>
+            </div>
+            <label for="book-title">Title</label>
+            <input type="text" name="book-title" id="book-title" required>
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required>
+            <label for="rating">Book rating</label>
+            <input type="text" name="rating" id="rating" required min="1" max="5">
+            <label for="status">Status</label>
+            <input type="text" name="status" id="status" required>
+            <button type="submit" class="form-button2">Add Book</button>
+        </form>
 </body>
 </html>

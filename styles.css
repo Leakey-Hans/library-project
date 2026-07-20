@@ -9,6 +9,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 0.4fr 2fr;
+    position: relative;
 }
 
 .sidebar {
@@ -187,6 +188,81 @@ li.active{
     color: rgb(139, 63, 209);
 }
 
+.addBook-form{
+    position: absolute;
+    left: 42%;
+    bottom: 35%;
+    background-color: rgb(255, 255, 255);
+    min-height: 30vh;
+    max-width: 500px;
+    width: 500px;
+    box-shadow: 0px 4px 10px rgba(140, 138, 141, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#book-title,
+#author,
+#rating,
+#status{
+    min-height: 3vh;
+    border-radius: 8px;
+    padding-left: 10px;
+    border: 2px solid rgb(199, 199, 199);
+}
+
+.form-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-button{
+    flex-basis: 50px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: 2px solid rgb(193, 107, 219);
+    background-color: white;
+    color: grey;
+    transition: 0.3s ease;
+}
+
+.form-button:hover{
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid red;
+    box-shadow: 0px 4px 10px rgba(140, 138, 141, 0.3);
+}
+
+.form-button:active{
+    box-shadow: none;
+}
+
+
+.form-button2{
+    padding: 10px 5px;
+    margin-top: 20px;
+    width: 200px;
+    align-self: center;
+    border-radius: 8px;
+    border: 2px solid rgb(193, 107, 219);
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.form-button2:hover{
+    color: black;
+    border: 2px solid rgb(23, 186, 23);
+    box-shadow: 0px 4px 10px rgba(140, 138, 141, 0.3);
+}
+
+.form-button2:active{
+    box-shadow: none;
+}
 
 
 
