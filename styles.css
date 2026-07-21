@@ -33,7 +33,7 @@
     background-color: rgb(240, 240, 240);
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 515px));
     grid-template-rows: repeat(4, 150px);
     grid-auto-rows: 150px;
     gap: 30px;
@@ -165,6 +165,7 @@ li.active{
     background-color: white;
     gap: 30px;
     border-radius: 10px;
+    width: max-content;
 }
 
 .book-cover{
@@ -203,6 +204,10 @@ li.active{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.hidden{
+    display: none;
 }
 
 #book-title,
@@ -258,10 +263,50 @@ li.active{
     color: black;
     border: 2px solid rgb(23, 186, 23);
     box-shadow: 0px 4px 10px rgba(140, 138, 141, 0.3);
+    font-weight: 900;
 }
 
 .form-button2:active{
     box-shadow: none;
+    font-weight: 300;
+}
+
+.book-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-actions-btn1{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(205, 204, 204);
+    padding: 5px 10px;
+    transition: 0.3s ease-in;
+}
+
+.book-actions-btn1:hover{
+    font-weight: 700;
+    color: red;
+}
+
+.book-actions-btn1:active{
+    border: none;
+}
+
+.book-actions-btn2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(205, 204, 204);
+    padding: 5px 10px;
+    transition: 0.3s ease-in;
+}
+
+.book-actions-btn2:hover{
+    font-weight: 700;
+    color: rgb(179, 0, 255);
+}
+
+.book-actions-btn2:active{
+    border: none;
 }
 
 
